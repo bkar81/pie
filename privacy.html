@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — PIE Tracker</title>
+<meta name="theme-color" content="#0B0D10">
+<style>
+  :root{ --bg:#0B0D10; --bg-elev:#14171C; --border:#262B33; --text:#E8E6E1; --text-dim:#9AA0AC; --text-faint:#5B616C; --accent:#D9A441; }
+  *{box-sizing:border-box;}
+  body{ margin:0; background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; line-height:1.6; padding:32px 20px 64px; }
+  .wrap{max-width:640px; margin:0 auto;}
+  a{color:var(--accent);}
+  h1{font-size:24px; margin:0 0 4px;}
+  .updated{color:var(--text-faint); font-size:13px; margin-bottom:32px;}
+  .card{ background:var(--bg-elev); border:1px solid var(--border); border-radius:14px; padding:20px 22px; margin-bottom:16px; }
+  h2{font-size:15px; margin:0 0 10px; color:var(--accent);}
+  p,li{color:var(--text-dim); font-size:14.5px;}
+  p{margin:0 0 10px;} p:last-child{margin-bottom:0;}
+  ul{margin:0 0 10px; padding-left:20px;}
+  .back{display:inline-block; margin-bottom:24px; font-size:13.5px; color:var(--text-faint); text-decoration:none;}
+  .back:hover{color:var(--accent);}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="./index.html">‹ Back to PIE Tracker</a>
+  <h1>Privacy Policy for PIE Tracker</h1>
+  <div class="updated">Last updated: October 2026</div>
+
+  <div class="card">
+    <h2>1. Data storage</h2>
+    <p>PIE Tracker (Personal Income Expense Tracker) stores your transactions, accounts, categories, currencies and settings in your browser's local storage on your own device.</p>
+    <p>If you choose to connect Google Drive sync, PIE Tracker uses Google OAuth solely to keep a copy of that data in a single file (<code>pie-sync.json</code>) in your own Google Drive. It uses the <code>drive.file</code> permission, which only allows access to files PIE Tracker itself created.</p>
+  </div>
+
+  <div class="card">
+    <h2>2. Data collection and usage</h2>
+    <p>PIE Tracker does not own, operate or maintain any external database or server to store, transmit or process your personal information. All app data stays on your device and, if you connect it, in your own Google account.</p>
+  </div>
+
+  <div class="card">
+    <h2>3. Screen privacy</h2>
+    <p>Screen privacy is optional and off by default. If you turn it on:</p>
+    <ul>
+      <li>Your code is never stored. Only a one-way verifier (PBKDF2-SHA256 with a random salt) is saved, and synced to your own Drive file so the same code works on your other devices.</li>
+      <li>The recovery code is stored the same way.</li>
+      <li>The recovery email is stored only as a SHA-256 fingerprint, not as the address.</li>
+      <li>If you use <b>Verify with Google</b> to reset a forgotten code, PIE Tracker asks Google for your email address (<code>openid email</code>), compares it with the stored fingerprint on your device, and then discards it. The address is not stored or sent anywhere else.</li>
+    </ul>
+    <p>Screen privacy hides screens; it does not encrypt your financial data.</p>
+  </div>
+
+  <div class="card">
+    <h2>4. Third-party sharing</h2>
+    <p>We do not collect, share, track or sell any user data or personal information to third parties.</p>
+  </div>
+
+  <div class="card">
+    <h2>5. Access revocation</h2>
+    <p>You can revoke PIE Tracker's access to your Google account at any time from your <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google Account permissions settings</a>, or disconnect from Settings → Data → Google Sync in the app.</p>
+  </div>
+
+  <div class="card">
+    <h2>6. Contact</h2>
+    <p>If you have any questions about this Privacy Policy, please contact the developer at: <strong>bkar81@gmail.com</strong></p>
+  </div>
+</div>
+</body>
+</html>
