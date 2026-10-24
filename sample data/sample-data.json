@@ -1,0 +1,2671 @@
+{
+  "backupType": "PIE_COMPLETE",
+  "version": 1,
+  "exportedAt": "2026-10-24T12:00:00.000Z",
+  "settings": {
+    "defaultKind": "expense",
+    "defaultCurrency": "INR"
+  },
+  "currencies": [
+    {
+      "id": "cur_INR",
+      "code": "INR",
+      "symbol": "₹",
+      "name": "Indian Rupee",
+      "order": 0
+    },
+    {
+      "id": "cur_USD",
+      "code": "USD",
+      "symbol": "$",
+      "name": "US Dollar",
+      "order": 1
+    },
+    {
+      "id": "cur_SGD",
+      "code": "SGD",
+      "symbol": "S$",
+      "name": "Singapore Dollar",
+      "order": 2
+    }
+  ],
+  "categories": [
+    {
+      "id": "nyaa0nzpi",
+      "name": "Food",
+      "icon": "🍽️",
+      "order": 0,
+      "subs": [
+        {
+          "id": "x2agt6j3q",
+          "name": "Breakfast",
+          "order": 0
+        },
+        {
+          "id": "ertr41gcm",
+          "name": "Lunch",
+          "order": 1
+        },
+        {
+          "id": "q3llsbbuu",
+          "name": "Dinner",
+          "order": 2
+        },
+        {
+          "id": "xvebbbw0m",
+          "name": "Snacks",
+          "order": 3
+        },
+        {
+          "id": "r1cnunlvh",
+          "name": "Eating out",
+          "order": 4
+        }
+      ],
+      "group": "expense"
+    },
+    {
+      "id": "4j1ra7trc",
+      "name": "Grocery",
+      "icon": "🛒",
+      "order": 1,
+      "subs": [
+        {
+          "id": "6y185e8dk",
+          "name": "General",
+          "order": 0
+        }
+      ],
+      "group": "expense"
+    },
+    {
+      "id": "lu15xwpsz",
+      "name": "Personal",
+      "icon": "👤",
+      "order": 2,
+      "subs": [
+        {
+          "id": "mt4888nlx",
+          "name": "Haircut",
+          "order": 0
+        },
+        {
+          "id": "5y43ovetr",
+          "name": "Self-care",
+          "order": 1
+        }
+      ],
+      "group": "expense"
+    },
+    {
+      "id": "z8ajf2a8v",
+      "name": "Apparel",
+      "icon": "👕",
+      "order": 3,
+      "subs": [
+        {
+          "id": "gaysgtspv",
+          "name": "General",
+          "order": 0
+        }
+      ],
+      "group": "expense"
+    },
+    {
+      "id": "ssihzbrj0",
+      "name": "Household",
+      "icon": "🏠",
+      "order": 4,
+      "subs": [
+        {
+          "id": "4mp0kq0wz",
+          "name": "Cleaning",
+          "order": 0
+        },
+        {
+          "id": "nlz8mvtbf",
+          "name": "Kitchen",
+          "order": 1
+        }
+      ],
+      "group": "expense"
+    },
+    {
+      "id": "ewvoo7q2m",
+      "name": "Recharge",
+      "icon": "🔋",
+      "order": 5,
+      "subs": [
+        {
+          "id": "wj60ktyzw",
+          "name": "Mobile",
+          "order": 0
+        },
+        {
+          "id": "yqoi4h7f6",
+          "name": "DTH",
+          "order": 1
+        }
+      ],
+      "group": "expense"
+    },
+    {
+      "id": "ih858e90k",
+      "name": "Books/Stationery",
+      "icon": "📚",
+      "order": 6,
+      "subs": [
+        {
+          "id": "es4dh2c0e",
+          "name": "Books",
+          "order": 0
+        },
+        {
+          "id": "un4grfqg9",
+          "name": "Stationery",
+          "order": 1
+        }
+      ],
+      "group": "expense"
+    },
+    {
+      "id": "4ozqtiso3",
+      "name": "Fancy Store",
+      "icon": "💎",
+      "order": 7,
+      "subs": [
+        {
+          "id": "yuc0ed3r8",
+          "name": "General",
+          "order": 0
+        }
+      ],
+      "group": "expense"
+    },
+    {
+      "id": "z0rciyxan",
+      "name": "Health",
+      "icon": "🩺",
+      "order": 8,
+      "subs": [
+        {
+          "id": "h9yw8fq2x",
+          "name": "Medicine",
+          "order": 0
+        },
+        {
+          "id": "g50yimj6c",
+          "name": "Doctor",
+          "order": 1
+        }
+      ],
+      "group": "expense"
+    },
+    {
+      "id": "5surenyl9",
+      "name": "Transportation",
+      "icon": "🚗",
+      "order": 9,
+      "subs": [
+        {
+          "id": "3ae26viti",
+          "name": "Fuel",
+          "order": 0
+        },
+        {
+          "id": "03nyy3lj7",
+          "name": "Cab",
+          "order": 1
+        }
+      ],
+      "group": "expense"
+    },
+    {
+      "id": "wfaa523dd",
+      "name": "Gift",
+      "icon": "🎁",
+      "order": 10,
+      "subs": [
+        {
+          "id": "nphjf1taa",
+          "name": "General",
+          "order": 0
+        }
+      ],
+      "group": "expense"
+    },
+    {
+      "id": "db0kqcfse",
+      "name": "Other",
+      "icon": "🗂️",
+      "order": 11,
+      "subs": [
+        {
+          "id": "mp25qqcb9",
+          "name": "General",
+          "order": 0
+        }
+      ],
+      "group": "expense"
+    },
+    {
+      "id": "c0001",
+      "name": "Salary",
+      "icon": "💼",
+      "group": "income",
+      "order": 12,
+      "subs": [
+        {
+          "id": "s0002",
+          "name": "Monthly",
+          "order": 0
+        },
+        {
+          "id": "s0003",
+          "name": "Bonus",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "id": "c0004",
+      "name": "Freelance",
+      "icon": "💻",
+      "group": "income",
+      "order": 13,
+      "subs": [
+        {
+          "id": "s0005",
+          "name": "Projects",
+          "order": 0
+        }
+      ]
+    },
+    {
+      "id": "c0006",
+      "name": "Interest",
+      "icon": "🏦",
+      "group": "income",
+      "order": 14,
+      "subs": [
+        {
+          "id": "s0007",
+          "name": "Savings",
+          "order": 0
+        },
+        {
+          "id": "s0008",
+          "name": "FD",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "id": "c0009",
+      "name": "Rental",
+      "icon": "🏘️",
+      "group": "income",
+      "order": 15,
+      "subs": [
+        {
+          "id": "s0010",
+          "name": "Flat 2B",
+          "order": 0
+        }
+      ]
+    },
+    {
+      "id": "c0011",
+      "name": "Refund",
+      "icon": "🔁",
+      "group": "both",
+      "order": 16,
+      "subs": [
+        {
+          "id": "s0012",
+          "name": "General",
+          "order": 0
+        }
+      ]
+    }
+  ],
+  "accounts": [
+    {
+      "id": "kom3rhcyo",
+      "name": "Credit Card",
+      "order": 0,
+      "settlement": "payment",
+      "subs": [
+        {
+          "id": "i5d8nrn9q",
+          "name": "HDFC Regalia",
+          "order": 0
+        },
+        {
+          "id": "gca4rd7dd",
+          "name": "ICICI Amazon Pay",
+          "order": 1
+        }
+      ],
+      "group": "expense"
+    },
+    {
+      "id": "9z9lp5eu1",
+      "name": "Debit Card",
+      "order": 1,
+      "settlement": "direct",
+      "subs": [
+        {
+          "id": "xgm9shkoi",
+          "name": "HDFC Debit",
+          "order": 0
+        }
+      ],
+      "group": "expense"
+    },
+    {
+      "id": "wyy3njhuk",
+      "name": "UPI",
+      "order": 2,
+      "settlement": "direct",
+      "subs": [
+        {
+          "id": "n1irrnoh7",
+          "name": "GPay",
+          "order": 0
+        },
+        {
+          "id": "vywhncljw",
+          "name": "PhonePe",
+          "order": 1
+        }
+      ],
+      "group": "expense"
+    },
+    {
+      "id": "vky4k5use",
+      "name": "Bank Transfer",
+      "order": 3,
+      "settlement": "direct",
+      "subs": [
+        {
+          "id": "nqh6283tl",
+          "name": "SBI Savings",
+          "order": 0
+        }
+      ],
+      "group": "expense"
+    },
+    {
+      "id": "sj56xk7a8",
+      "name": "Cash",
+      "order": 4,
+      "settlement": "direct",
+      "subs": [
+        {
+          "id": "sepht7rwg",
+          "name": "Cash",
+          "order": 0
+        }
+      ],
+      "group": "expense"
+    },
+    {
+      "id": "a0013",
+      "name": "Employer",
+      "group": "income",
+      "settlement": "direct",
+      "order": 5,
+      "subs": [
+        {
+          "id": "s0014",
+          "name": "Acme Corp",
+          "order": 0
+        }
+      ]
+    },
+    {
+      "id": "a0015",
+      "name": "Bank Account",
+      "group": "income",
+      "settlement": "direct",
+      "order": 6,
+      "subs": [
+        {
+          "id": "s0016",
+          "name": "SBI Savings",
+          "order": 0
+        },
+        {
+          "id": "s0017",
+          "name": "HDFC Savings",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "id": "a0018",
+      "name": "Online",
+      "group": "income",
+      "settlement": "direct",
+      "order": 7,
+      "subs": [
+        {
+          "id": "s0019",
+          "name": "PayPal",
+          "order": 0
+        }
+      ]
+    }
+  ],
+  "transactions": [
+    {
+      "id": "t0020",
+      "date": "2026-08-01T00:00:00",
+      "amount": 92000,
+      "currency": "INR",
+      "catId": "c0001",
+      "subId": "s0002",
+      "accId": "a0013",
+      "subAccId": "s0014",
+      "note": "Monthly salary",
+      "paid": false
+    },
+    {
+      "id": "t0021",
+      "date": "2026-08-01T00:00:00",
+      "amount": 1820,
+      "currency": "INR",
+      "catId": "4j1ra7trc",
+      "subId": "6y185e8dk",
+      "accId": "kom3rhcyo",
+      "subAccId": "gca4rd7dd",
+      "note": "More supermarket",
+      "paid": true
+    },
+    {
+      "id": "t0022",
+      "date": "2026-08-02T00:00:00",
+      "amount": 640,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "r1cnunlvh",
+      "accId": "kom3rhcyo",
+      "subAccId": "i5d8nrn9q",
+      "note": "Saravana Bhavan",
+      "paid": true
+    },
+    {
+      "id": "t0023",
+      "date": "2026-08-02T00:00:00",
+      "amount": 2650,
+      "currency": "INR",
+      "catId": "5surenyl9",
+      "subId": "3ae26viti",
+      "accId": "9z9lp5eu1",
+      "subAccId": "xgm9shkoi",
+      "note": "Indian Oil fuel",
+      "paid": false
+    },
+    {
+      "id": "t0024",
+      "date": "2026-08-03T00:00:00",
+      "amount": 399,
+      "currency": "INR",
+      "catId": "ewvoo7q2m",
+      "subId": "wj60ktyzw",
+      "accId": "wyy3njhuk",
+      "subAccId": "n1irrnoh7",
+      "note": "Airtel recharge",
+      "paid": false
+    },
+    {
+      "id": "t0025",
+      "date": "2026-08-03T00:00:00",
+      "amount": 90,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Dosa & coffee",
+      "paid": false
+    },
+    {
+      "id": "t0026",
+      "date": "2026-08-03T00:00:00",
+      "amount": 180,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "wyy3njhuk",
+      "subAccId": "n1irrnoh7",
+      "note": "Office lunch",
+      "paid": false
+    },
+    {
+      "id": "t0027",
+      "date": "2026-08-04T00:00:00",
+      "amount": 140,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Dosa & coffee",
+      "paid": false
+    },
+    {
+      "id": "t0028",
+      "date": "2026-08-05T00:00:00",
+      "amount": 18000,
+      "currency": "INR",
+      "catId": "c0009",
+      "subId": "s0010",
+      "accId": "a0015",
+      "subAccId": "s0016",
+      "note": "Flat 2B rent received",
+      "paid": false
+    },
+    {
+      "id": "t0029",
+      "date": "2026-08-05T00:00:00",
+      "amount": 90,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Dosa & coffee",
+      "paid": false
+    },
+    {
+      "id": "t0030",
+      "date": "2026-08-05T00:00:00",
+      "amount": 180,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "kom3rhcyo",
+      "subAccId": "i5d8nrn9q",
+      "note": "Office lunch",
+      "paid": true
+    },
+    {
+      "id": "t0031",
+      "date": "2026-08-06T00:00:00",
+      "amount": 140,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Pongal vada",
+      "paid": false
+    },
+    {
+      "id": "t0032",
+      "date": "2026-08-06T00:00:00",
+      "amount": 220,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "kom3rhcyo",
+      "subAccId": "i5d8nrn9q",
+      "note": "Office lunch",
+      "paid": true
+    },
+    {
+      "id": "t0033",
+      "date": "2026-08-07T00:00:00",
+      "amount": 90,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Dosa & coffee",
+      "paid": false
+    },
+    {
+      "id": "t0034",
+      "date": "2026-08-07T00:00:00",
+      "amount": 220,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "wyy3njhuk",
+      "subAccId": "n1irrnoh7",
+      "note": "Office lunch",
+      "paid": false
+    },
+    {
+      "id": "t0035",
+      "date": "2026-08-08T00:00:00",
+      "amount": 2680,
+      "currency": "INR",
+      "catId": "4j1ra7trc",
+      "subId": "6y185e8dk",
+      "accId": "kom3rhcyo",
+      "subAccId": "gca4rd7dd",
+      "note": "Reliance Smart",
+      "paid": true
+    },
+    {
+      "id": "t0188",
+      "date": "2026-08-08T00:00:00",
+      "amount": 1899,
+      "currency": "INR",
+      "catId": "z8ajf2a8v",
+      "subId": "gaysgtspv",
+      "accId": "kom3rhcyo",
+      "subAccId": "i5d8nrn9q",
+      "note": "Max Fashion",
+      "paid": true
+    },
+    {
+      "id": "t0036",
+      "date": "2026-08-09T00:00:00",
+      "amount": 349,
+      "currency": "INR",
+      "catId": "ewvoo7q2m",
+      "subId": "yqoi4h7f6",
+      "accId": "wyy3njhuk",
+      "subAccId": "vywhncljw",
+      "note": "Tata Play DTH",
+      "paid": false
+    },
+    {
+      "id": "t0037",
+      "date": "2026-08-10T00:00:00",
+      "amount": 110,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Idli & filter coffee",
+      "paid": false
+    },
+    {
+      "id": "t0038",
+      "date": "2026-08-10T00:00:00",
+      "amount": 260,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "wyy3njhuk",
+      "subAccId": "n1irrnoh7",
+      "note": "Office lunch",
+      "paid": false
+    },
+    {
+      "id": "t0039",
+      "date": "2026-08-11T00:00:00",
+      "amount": 110,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Idli & filter coffee",
+      "paid": false
+    },
+    {
+      "id": "t0040",
+      "date": "2026-08-11T00:00:00",
+      "amount": 150,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "kom3rhcyo",
+      "subAccId": "i5d8nrn9q",
+      "note": "Office lunch",
+      "paid": true
+    },
+    {
+      "id": "t0041",
+      "date": "2026-08-11T00:00:00",
+      "amount": 210,
+      "currency": "INR",
+      "catId": "5surenyl9",
+      "subId": "03nyy3lj7",
+      "accId": "wyy3njhuk",
+      "subAccId": "vywhncljw",
+      "note": "Ola to office",
+      "paid": false
+    },
+    {
+      "id": "t0042",
+      "date": "2026-08-12T00:00:00",
+      "amount": 649,
+      "currency": "INR",
+      "catId": "db0kqcfse",
+      "subId": "mp25qqcb9",
+      "accId": "kom3rhcyo",
+      "subAccId": "i5d8nrn9q",
+      "note": "Netflix",
+      "paid": true
+    },
+    {
+      "id": "t0043",
+      "date": "2026-08-12T00:00:00",
+      "amount": 120,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Idli & filter coffee",
+      "paid": false
+    },
+    {
+      "id": "t0044",
+      "date": "2026-08-12T00:00:00",
+      "amount": 260,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "wyy3njhuk",
+      "subAccId": "n1irrnoh7",
+      "note": "Office lunch",
+      "paid": false
+    },
+    {
+      "id": "t0045",
+      "date": "2026-08-13T00:00:00",
+      "amount": 90,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Pongal vada",
+      "paid": false
+    },
+    {
+      "id": "t0046",
+      "date": "2026-08-13T00:00:00",
+      "amount": 180,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "kom3rhcyo",
+      "subAccId": "i5d8nrn9q",
+      "note": "Office lunch",
+      "paid": true
+    },
+    {
+      "id": "t0047",
+      "date": "2026-08-14T00:00:00",
+      "amount": 120,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Pongal vada",
+      "paid": false
+    },
+    {
+      "id": "t0048",
+      "date": "2026-08-15T00:00:00",
+      "amount": 2680,
+      "currency": "INR",
+      "catId": "4j1ra7trc",
+      "subId": "6y185e8dk",
+      "accId": "kom3rhcyo",
+      "subAccId": "gca4rd7dd",
+      "note": "Reliance Smart",
+      "paid": true
+    },
+    {
+      "id": "t0049",
+      "date": "2026-08-16T00:00:00",
+      "amount": 1360,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "r1cnunlvh",
+      "accId": "kom3rhcyo",
+      "subAccId": "i5d8nrn9q",
+      "note": "Anjappar",
+      "paid": true
+    },
+    {
+      "id": "t0189",
+      "date": "2026-08-16T00:00:00",
+      "amount": 650,
+      "currency": "INR",
+      "catId": "lu15xwpsz",
+      "subId": "mt4888nlx",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Haircut + beard",
+      "paid": false
+    },
+    {
+      "id": "t0050",
+      "date": "2026-08-17T00:00:00",
+      "amount": 90,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Idli & filter coffee",
+      "paid": false
+    },
+    {
+      "id": "t0051",
+      "date": "2026-08-17T00:00:00",
+      "amount": 260,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "kom3rhcyo",
+      "subAccId": "i5d8nrn9q",
+      "note": "Office lunch",
+      "paid": true
+    },
+    {
+      "id": "t0052",
+      "date": "2026-08-17T00:00:00",
+      "amount": 185,
+      "currency": "INR",
+      "catId": "5surenyl9",
+      "subId": "03nyy3lj7",
+      "accId": "wyy3njhuk",
+      "subAccId": "vywhncljw",
+      "note": "Ola to office",
+      "paid": false
+    },
+    {
+      "id": "t0053",
+      "date": "2026-08-18T00:00:00",
+      "amount": 90,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Pongal vada",
+      "paid": false
+    },
+    {
+      "id": "t0054",
+      "date": "2026-08-18T00:00:00",
+      "amount": 210,
+      "currency": "INR",
+      "catId": "5surenyl9",
+      "subId": "03nyy3lj7",
+      "accId": "wyy3njhuk",
+      "subAccId": "vywhncljw",
+      "note": "Ola to office",
+      "paid": false
+    },
+    {
+      "id": "t0055",
+      "date": "2026-08-19T00:00:00",
+      "amount": 90,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Idli & filter coffee",
+      "paid": false
+    },
+    {
+      "id": "t0056",
+      "date": "2026-08-19T00:00:00",
+      "amount": 260,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "kom3rhcyo",
+      "subAccId": "i5d8nrn9q",
+      "note": "Office lunch",
+      "paid": true
+    },
+    {
+      "id": "t0057",
+      "date": "2026-08-20T00:00:00",
+      "amount": 120,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Pongal vada",
+      "paid": false
+    },
+    {
+      "id": "t0058",
+      "date": "2026-08-20T00:00:00",
+      "amount": 150,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "wyy3njhuk",
+      "subAccId": "n1irrnoh7",
+      "note": "Office lunch",
+      "paid": false
+    },
+    {
+      "id": "t0059",
+      "date": "2026-08-20T00:00:00",
+      "amount": 185,
+      "currency": "INR",
+      "catId": "5surenyl9",
+      "subId": "03nyy3lj7",
+      "accId": "wyy3njhuk",
+      "subAccId": "vywhncljw",
+      "note": "Uber home",
+      "paid": false
+    },
+    {
+      "id": "t0199",
+      "date": "2026-08-20T00:00:00",
+      "amount": 400,
+      "currency": "USD",
+      "catId": "c0004",
+      "subId": "s0005",
+      "accId": "a0018",
+      "subAccId": "s0019",
+      "note": "Logo design project",
+      "paid": false
+    },
+    {
+      "id": "t0060",
+      "date": "2026-08-21T00:00:00",
+      "amount": 110,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Pongal vada",
+      "paid": false
+    },
+    {
+      "id": "t0061",
+      "date": "2026-08-22T00:00:00",
+      "amount": 2680,
+      "currency": "INR",
+      "catId": "4j1ra7trc",
+      "subId": "6y185e8dk",
+      "accId": "kom3rhcyo",
+      "subAccId": "gca4rd7dd",
+      "note": "Reliance Smart",
+      "paid": true
+    },
+    {
+      "id": "t0062",
+      "date": "2026-08-23T00:00:00",
+      "amount": 1120,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "r1cnunlvh",
+      "accId": "kom3rhcyo",
+      "subAccId": "i5d8nrn9q",
+      "note": "Anjappar",
+      "paid": true
+    },
+    {
+      "id": "t0190",
+      "date": "2026-08-23T00:00:00",
+      "amount": 2350,
+      "currency": "INR",
+      "catId": "z0rciyxan",
+      "subId": "g50yimj6c",
+      "accId": "vky4k5use",
+      "subAccId": "nqh6283tl",
+      "note": "Apollo consultation",
+      "paid": false
+    },
+    {
+      "id": "t0191",
+      "date": "2026-08-23T00:00:00",
+      "amount": 780,
+      "currency": "INR",
+      "catId": "z0rciyxan",
+      "subId": "h9yw8fq2x",
+      "accId": "wyy3njhuk",
+      "subAccId": "n1irrnoh7",
+      "note": "Pharmacy",
+      "paid": false
+    },
+    {
+      "id": "t0063",
+      "date": "2026-08-24T00:00:00",
+      "amount": 90,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Dosa & coffee",
+      "paid": false
+    },
+    {
+      "id": "t0064",
+      "date": "2026-08-24T00:00:00",
+      "amount": 150,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "kom3rhcyo",
+      "subAccId": "i5d8nrn9q",
+      "note": "Office lunch",
+      "paid": true
+    },
+    {
+      "id": "t0065",
+      "date": "2026-08-24T00:00:00",
+      "amount": 240,
+      "currency": "INR",
+      "catId": "5surenyl9",
+      "subId": "03nyy3lj7",
+      "accId": "wyy3njhuk",
+      "subAccId": "vywhncljw",
+      "note": "Ola to office",
+      "paid": false
+    },
+    {
+      "id": "t0066",
+      "date": "2026-08-25T00:00:00",
+      "amount": 120,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Idli & filter coffee",
+      "paid": false
+    },
+    {
+      "id": "t0067",
+      "date": "2026-08-25T00:00:00",
+      "amount": 180,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "wyy3njhuk",
+      "subAccId": "n1irrnoh7",
+      "note": "Office lunch",
+      "paid": false
+    },
+    {
+      "id": "t0068",
+      "date": "2026-08-26T00:00:00",
+      "amount": 110,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Idli & filter coffee",
+      "paid": false
+    },
+    {
+      "id": "t0069",
+      "date": "2026-08-26T00:00:00",
+      "amount": 165,
+      "currency": "INR",
+      "catId": "5surenyl9",
+      "subId": "03nyy3lj7",
+      "accId": "wyy3njhuk",
+      "subAccId": "vywhncljw",
+      "note": "Ola to office",
+      "paid": false
+    },
+    {
+      "id": "t0070",
+      "date": "2026-08-27T00:00:00",
+      "amount": 110,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Idli & filter coffee",
+      "paid": false
+    },
+    {
+      "id": "t0071",
+      "date": "2026-08-27T00:00:00",
+      "amount": 185,
+      "currency": "INR",
+      "catId": "5surenyl9",
+      "subId": "03nyy3lj7",
+      "accId": "wyy3njhuk",
+      "subAccId": "vywhncljw",
+      "note": "Ola to office",
+      "paid": false
+    },
+    {
+      "id": "t0072",
+      "date": "2026-08-28T00:00:00",
+      "amount": 90,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Idli & filter coffee",
+      "paid": false
+    },
+    {
+      "id": "t0073",
+      "date": "2026-08-28T00:00:00",
+      "amount": 180,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "wyy3njhuk",
+      "subAccId": "n1irrnoh7",
+      "note": "Office lunch",
+      "paid": false
+    },
+    {
+      "id": "t0074",
+      "date": "2026-08-28T00:00:00",
+      "amount": 185,
+      "currency": "INR",
+      "catId": "5surenyl9",
+      "subId": "03nyy3lj7",
+      "accId": "wyy3njhuk",
+      "subAccId": "vywhncljw",
+      "note": "Ola to office",
+      "paid": false
+    },
+    {
+      "id": "t0075",
+      "date": "2026-08-29T00:00:00",
+      "amount": 1450,
+      "currency": "INR",
+      "catId": "4j1ra7trc",
+      "subId": "6y185e8dk",
+      "accId": "kom3rhcyo",
+      "subAccId": "gca4rd7dd",
+      "note": "Reliance Smart",
+      "paid": true
+    },
+    {
+      "id": "t0076",
+      "date": "2026-08-30T00:00:00",
+      "amount": 880,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "r1cnunlvh",
+      "accId": "kom3rhcyo",
+      "subAccId": "i5d8nrn9q",
+      "note": "Anjappar",
+      "paid": true
+    },
+    {
+      "id": "t0077",
+      "date": "2026-08-31T00:00:00",
+      "amount": 140,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Dosa & coffee",
+      "paid": false
+    },
+    {
+      "id": "t0078",
+      "date": "2026-08-31T00:00:00",
+      "amount": 220,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "wyy3njhuk",
+      "subAccId": "n1irrnoh7",
+      "note": "Office lunch",
+      "paid": false
+    },
+    {
+      "id": "t0079",
+      "date": "2026-09-01T00:00:00",
+      "amount": 92000,
+      "currency": "INR",
+      "catId": "c0001",
+      "subId": "s0002",
+      "accId": "a0013",
+      "subAccId": "s0014",
+      "note": "Monthly salary",
+      "paid": false
+    },
+    {
+      "id": "t0080",
+      "date": "2026-09-01T00:00:00",
+      "amount": 120,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Dosa & coffee",
+      "paid": false
+    },
+    {
+      "id": "t0081",
+      "date": "2026-09-02T00:00:00",
+      "amount": 140,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Idli & filter coffee",
+      "paid": false
+    },
+    {
+      "id": "t0082",
+      "date": "2026-09-03T00:00:00",
+      "amount": 399,
+      "currency": "INR",
+      "catId": "ewvoo7q2m",
+      "subId": "wj60ktyzw",
+      "accId": "wyy3njhuk",
+      "subAccId": "n1irrnoh7",
+      "note": "Airtel recharge",
+      "paid": false
+    },
+    {
+      "id": "t0083",
+      "date": "2026-09-03T00:00:00",
+      "amount": 110,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Dosa & coffee",
+      "paid": false
+    },
+    {
+      "id": "t0084",
+      "date": "2026-09-04T00:00:00",
+      "amount": 140,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Dosa & coffee",
+      "paid": false
+    },
+    {
+      "id": "t0085",
+      "date": "2026-09-04T00:00:00",
+      "amount": 180,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "wyy3njhuk",
+      "subAccId": "n1irrnoh7",
+      "note": "Office lunch",
+      "paid": false
+    },
+    {
+      "id": "t0086",
+      "date": "2026-09-04T00:00:00",
+      "amount": 165,
+      "currency": "INR",
+      "catId": "5surenyl9",
+      "subId": "03nyy3lj7",
+      "accId": "wyy3njhuk",
+      "subAccId": "vywhncljw",
+      "note": "Ola to office",
+      "paid": false
+    },
+    {
+      "id": "t0087",
+      "date": "2026-09-05T00:00:00",
+      "amount": 18000,
+      "currency": "INR",
+      "catId": "c0009",
+      "subId": "s0010",
+      "accId": "a0015",
+      "subAccId": "s0016",
+      "note": "Flat 2B rent received",
+      "paid": false
+    },
+    {
+      "id": "t0088",
+      "date": "2026-09-05T00:00:00",
+      "amount": 1450,
+      "currency": "INR",
+      "catId": "4j1ra7trc",
+      "subId": "6y185e8dk",
+      "accId": "kom3rhcyo",
+      "subAccId": "gca4rd7dd",
+      "note": "BigBasket order",
+      "paid": true
+    },
+    {
+      "id": "t0089",
+      "date": "2026-09-06T00:00:00",
+      "amount": 2400,
+      "currency": "INR",
+      "catId": "5surenyl9",
+      "subId": "3ae26viti",
+      "accId": "9z9lp5eu1",
+      "subAccId": "xgm9shkoi",
+      "note": "Indian Oil fuel",
+      "paid": false
+    },
+    {
+      "id": "t0192",
+      "date": "2026-09-06T00:00:00",
+      "amount": 3499,
+      "currency": "INR",
+      "catId": "ssihzbrj0",
+      "subId": "nlz8mvtbf",
+      "accId": "kom3rhcyo",
+      "subAccId": "gca4rd7dd",
+      "note": "Pressure cooker",
+      "paid": true
+    },
+    {
+      "id": "t0090",
+      "date": "2026-09-07T00:00:00",
+      "amount": 110,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Pongal vada",
+      "paid": false
+    },
+    {
+      "id": "t0091",
+      "date": "2026-09-07T00:00:00",
+      "amount": 210,
+      "currency": "INR",
+      "catId": "5surenyl9",
+      "subId": "03nyy3lj7",
+      "accId": "wyy3njhuk",
+      "subAccId": "vywhncljw",
+      "note": "Ola to office",
+      "paid": false
+    },
+    {
+      "id": "t0092",
+      "date": "2026-09-08T00:00:00",
+      "amount": 140,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Pongal vada",
+      "paid": false
+    },
+    {
+      "id": "t0093",
+      "date": "2026-09-09T00:00:00",
+      "amount": 349,
+      "currency": "INR",
+      "catId": "ewvoo7q2m",
+      "subId": "yqoi4h7f6",
+      "accId": "wyy3njhuk",
+      "subAccId": "vywhncljw",
+      "note": "Tata Play DTH",
+      "paid": false
+    },
+    {
+      "id": "t0094",
+      "date": "2026-09-09T00:00:00",
+      "amount": 140,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Pongal vada",
+      "paid": false
+    },
+    {
+      "id": "t0095",
+      "date": "2026-09-09T00:00:00",
+      "amount": 260,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "kom3rhcyo",
+      "subAccId": "i5d8nrn9q",
+      "note": "Office lunch",
+      "paid": true
+    },
+    {
+      "id": "t0096",
+      "date": "2026-09-10T00:00:00",
+      "amount": 120,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Pongal vada",
+      "paid": false
+    },
+    {
+      "id": "t0097",
+      "date": "2026-09-10T00:00:00",
+      "amount": 220,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "kom3rhcyo",
+      "subAccId": "i5d8nrn9q",
+      "note": "Office lunch",
+      "paid": true
+    },
+    {
+      "id": "t0098",
+      "date": "2026-09-11T00:00:00",
+      "amount": 110,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Dosa & coffee",
+      "paid": false
+    },
+    {
+      "id": "t0099",
+      "date": "2026-09-11T00:00:00",
+      "amount": 260,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "kom3rhcyo",
+      "subAccId": "i5d8nrn9q",
+      "note": "Office lunch",
+      "paid": true
+    },
+    {
+      "id": "t0193",
+      "date": "2026-09-11T00:00:00",
+      "amount": 1240,
+      "currency": "INR",
+      "catId": "ih858e90k",
+      "subId": "es4dh2c0e",
+      "accId": "kom3rhcyo",
+      "subAccId": "gca4rd7dd",
+      "note": "Kindle books",
+      "paid": true
+    },
+    {
+      "id": "t0100",
+      "date": "2026-09-12T00:00:00",
+      "amount": 649,
+      "currency": "INR",
+      "catId": "db0kqcfse",
+      "subId": "mp25qqcb9",
+      "accId": "kom3rhcyo",
+      "subAccId": "i5d8nrn9q",
+      "note": "Netflix",
+      "paid": true
+    },
+    {
+      "id": "t0101",
+      "date": "2026-09-12T00:00:00",
+      "amount": 2680,
+      "currency": "INR",
+      "catId": "4j1ra7trc",
+      "subId": "6y185e8dk",
+      "accId": "kom3rhcyo",
+      "subAccId": "gca4rd7dd",
+      "note": "BigBasket order",
+      "paid": true
+    },
+    {
+      "id": "t0102",
+      "date": "2026-09-13T00:00:00",
+      "amount": 1120,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "r1cnunlvh",
+      "accId": "kom3rhcyo",
+      "subAccId": "i5d8nrn9q",
+      "note": "Saravana Bhavan",
+      "paid": true
+    },
+    {
+      "id": "t0103",
+      "date": "2026-09-14T00:00:00",
+      "amount": 140,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Dosa & coffee",
+      "paid": false
+    },
+    {
+      "id": "t0104",
+      "date": "2026-09-14T00:00:00",
+      "amount": 220,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "kom3rhcyo",
+      "subAccId": "i5d8nrn9q",
+      "note": "Office lunch",
+      "paid": true
+    },
+    {
+      "id": "t0105",
+      "date": "2026-09-14T00:00:00",
+      "amount": 185,
+      "currency": "INR",
+      "catId": "5surenyl9",
+      "subId": "03nyy3lj7",
+      "accId": "wyy3njhuk",
+      "subAccId": "vywhncljw",
+      "note": "Ola to office",
+      "paid": false
+    },
+    {
+      "id": "t0106",
+      "date": "2026-09-15T00:00:00",
+      "amount": 90,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Idli & filter coffee",
+      "paid": false
+    },
+    {
+      "id": "t0107",
+      "date": "2026-09-15T00:00:00",
+      "amount": 260,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "kom3rhcyo",
+      "subAccId": "i5d8nrn9q",
+      "note": "Office lunch",
+      "paid": true
+    },
+    {
+      "id": "t0108",
+      "date": "2026-09-16T00:00:00",
+      "amount": 110,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Pongal vada",
+      "paid": false
+    },
+    {
+      "id": "t0109",
+      "date": "2026-09-16T00:00:00",
+      "amount": 180,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "wyy3njhuk",
+      "subAccId": "n1irrnoh7",
+      "note": "Office lunch",
+      "paid": false
+    },
+    {
+      "id": "t0110",
+      "date": "2026-09-16T00:00:00",
+      "amount": 165,
+      "currency": "INR",
+      "catId": "5surenyl9",
+      "subId": "03nyy3lj7",
+      "accId": "wyy3njhuk",
+      "subAccId": "vywhncljw",
+      "note": "Ola to office",
+      "paid": false
+    },
+    {
+      "id": "t0111",
+      "date": "2026-09-17T00:00:00",
+      "amount": 140,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Pongal vada",
+      "paid": false
+    },
+    {
+      "id": "t0112",
+      "date": "2026-09-17T00:00:00",
+      "amount": 165,
+      "currency": "INR",
+      "catId": "5surenyl9",
+      "subId": "03nyy3lj7",
+      "accId": "wyy3njhuk",
+      "subAccId": "vywhncljw",
+      "note": "Uber home",
+      "paid": false
+    },
+    {
+      "id": "t0113",
+      "date": "2026-09-18T00:00:00",
+      "amount": 22,
+      "currency": "SGD",
+      "catId": "nyaa0nzpi",
+      "subId": "r1cnunlvh",
+      "accId": "kom3rhcyo",
+      "subAccId": "gca4rd7dd",
+      "note": "Toast Box",
+      "paid": true
+    },
+    {
+      "id": "t0114",
+      "date": "2026-09-18T00:00:00",
+      "amount": 19,
+      "currency": "SGD",
+      "catId": "5surenyl9",
+      "subId": "03nyy3lj7",
+      "accId": "kom3rhcyo",
+      "subAccId": "gca4rd7dd",
+      "note": "Grab ride",
+      "paid": true
+    },
+    {
+      "id": "t0115",
+      "date": "2026-09-19T00:00:00",
+      "amount": 31,
+      "currency": "SGD",
+      "catId": "nyaa0nzpi",
+      "subId": "r1cnunlvh",
+      "accId": "kom3rhcyo",
+      "subAccId": "gca4rd7dd",
+      "note": "Toast Box",
+      "paid": true
+    },
+    {
+      "id": "t0116",
+      "date": "2026-09-19T00:00:00",
+      "amount": 19,
+      "currency": "SGD",
+      "catId": "5surenyl9",
+      "subId": "03nyy3lj7",
+      "accId": "kom3rhcyo",
+      "subAccId": "gca4rd7dd",
+      "note": "Grab ride",
+      "paid": true
+    },
+    {
+      "id": "t0117",
+      "date": "2026-09-19T00:00:00",
+      "amount": 86,
+      "currency": "SGD",
+      "catId": "wfaa523dd",
+      "subId": "nphjf1taa",
+      "accId": "kom3rhcyo",
+      "subAccId": "gca4rd7dd",
+      "note": "Souvenirs, Chinatown",
+      "paid": true
+    },
+    {
+      "id": "t0118",
+      "date": "2026-09-20T00:00:00",
+      "amount": 26,
+      "currency": "SGD",
+      "catId": "nyaa0nzpi",
+      "subId": "r1cnunlvh",
+      "accId": "kom3rhcyo",
+      "subAccId": "gca4rd7dd",
+      "note": "Lau Pa Sat",
+      "paid": true
+    },
+    {
+      "id": "t0119",
+      "date": "2026-09-20T00:00:00",
+      "amount": 19,
+      "currency": "SGD",
+      "catId": "5surenyl9",
+      "subId": "03nyy3lj7",
+      "accId": "kom3rhcyo",
+      "subAccId": "gca4rd7dd",
+      "note": "Grab ride",
+      "paid": true
+    },
+    {
+      "id": "t0120",
+      "date": "2026-09-21T00:00:00",
+      "amount": 26,
+      "currency": "SGD",
+      "catId": "nyaa0nzpi",
+      "subId": "r1cnunlvh",
+      "accId": "kom3rhcyo",
+      "subAccId": "gca4rd7dd",
+      "note": "Din Tai Fung",
+      "paid": true
+    },
+    {
+      "id": "t0121",
+      "date": "2026-09-21T00:00:00",
+      "amount": 19,
+      "currency": "SGD",
+      "catId": "5surenyl9",
+      "subId": "03nyy3lj7",
+      "accId": "kom3rhcyo",
+      "subAccId": "gca4rd7dd",
+      "note": "Grab ride",
+      "paid": true
+    },
+    {
+      "id": "t0122",
+      "date": "2026-09-22T00:00:00",
+      "amount": 90,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Dosa & coffee",
+      "paid": false
+    },
+    {
+      "id": "t0123",
+      "date": "2026-09-22T00:00:00",
+      "amount": 220,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "wyy3njhuk",
+      "subAccId": "n1irrnoh7",
+      "note": "Office lunch",
+      "paid": false
+    },
+    {
+      "id": "t0124",
+      "date": "2026-09-22T00:00:00",
+      "amount": 185,
+      "currency": "INR",
+      "catId": "5surenyl9",
+      "subId": "03nyy3lj7",
+      "accId": "wyy3njhuk",
+      "subAccId": "vywhncljw",
+      "note": "Ola to office",
+      "paid": false
+    },
+    {
+      "id": "t0125",
+      "date": "2026-09-23T00:00:00",
+      "amount": 120,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Pongal vada",
+      "paid": false
+    },
+    {
+      "id": "t0126",
+      "date": "2026-09-24T00:00:00",
+      "amount": 90,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Idli & filter coffee",
+      "paid": false
+    },
+    {
+      "id": "t0127",
+      "date": "2026-09-24T00:00:00",
+      "amount": 185,
+      "currency": "INR",
+      "catId": "5surenyl9",
+      "subId": "03nyy3lj7",
+      "accId": "wyy3njhuk",
+      "subAccId": "vywhncljw",
+      "note": "Ola to office",
+      "paid": false
+    },
+    {
+      "id": "t0128",
+      "date": "2026-09-25T00:00:00",
+      "amount": 90,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Pongal vada",
+      "paid": false
+    },
+    {
+      "id": "t0129",
+      "date": "2026-09-25T00:00:00",
+      "amount": 260,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "wyy3njhuk",
+      "subAccId": "n1irrnoh7",
+      "note": "Office lunch",
+      "paid": false
+    },
+    {
+      "id": "t0130",
+      "date": "2026-09-26T00:00:00",
+      "amount": 2680,
+      "currency": "INR",
+      "catId": "4j1ra7trc",
+      "subId": "6y185e8dk",
+      "accId": "kom3rhcyo",
+      "subAccId": "gca4rd7dd",
+      "note": "More supermarket",
+      "paid": true
+    },
+    {
+      "id": "t0131",
+      "date": "2026-09-27T00:00:00",
+      "amount": 880,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "r1cnunlvh",
+      "accId": "kom3rhcyo",
+      "subAccId": "i5d8nrn9q",
+      "note": "Saravana Bhavan",
+      "paid": true
+    },
+    {
+      "id": "t0194",
+      "date": "2026-09-27T00:00:00",
+      "amount": 2200,
+      "currency": "INR",
+      "catId": "4ozqtiso3",
+      "subId": "yuc0ed3r8",
+      "accId": "wyy3njhuk",
+      "subAccId": "vywhncljw",
+      "note": "Diwali lights",
+      "paid": false
+    },
+    {
+      "id": "t0132",
+      "date": "2026-09-28T00:00:00",
+      "amount": 140,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Pongal vada",
+      "paid": false
+    },
+    {
+      "id": "t0133",
+      "date": "2026-09-28T00:00:00",
+      "amount": 180,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "kom3rhcyo",
+      "subAccId": "i5d8nrn9q",
+      "note": "Office lunch",
+      "paid": true
+    },
+    {
+      "id": "t0134",
+      "date": "2026-09-28T00:00:00",
+      "amount": 165,
+      "currency": "INR",
+      "catId": "5surenyl9",
+      "subId": "03nyy3lj7",
+      "accId": "wyy3njhuk",
+      "subAccId": "vywhncljw",
+      "note": "Uber home",
+      "paid": false
+    },
+    {
+      "id": "t0135",
+      "date": "2026-09-29T00:00:00",
+      "amount": 140,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Dosa & coffee",
+      "paid": false
+    },
+    {
+      "id": "t0136",
+      "date": "2026-09-29T00:00:00",
+      "amount": 260,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "wyy3njhuk",
+      "subAccId": "n1irrnoh7",
+      "note": "Office lunch",
+      "paid": false
+    },
+    {
+      "id": "t0137",
+      "date": "2026-09-29T00:00:00",
+      "amount": 210,
+      "currency": "INR",
+      "catId": "5surenyl9",
+      "subId": "03nyy3lj7",
+      "accId": "wyy3njhuk",
+      "subAccId": "vywhncljw",
+      "note": "Uber home",
+      "paid": false
+    },
+    {
+      "id": "t0138",
+      "date": "2026-09-30T00:00:00",
+      "amount": 120,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Pongal vada",
+      "paid": false
+    },
+    {
+      "id": "t0139",
+      "date": "2026-09-30T00:00:00",
+      "amount": 210,
+      "currency": "INR",
+      "catId": "5surenyl9",
+      "subId": "03nyy3lj7",
+      "accId": "wyy3njhuk",
+      "subAccId": "vywhncljw",
+      "note": "Uber home",
+      "paid": false
+    },
+    {
+      "id": "t0201",
+      "date": "2026-09-30T00:00:00",
+      "amount": 2340,
+      "currency": "INR",
+      "catId": "c0006",
+      "subId": "s0007",
+      "accId": "a0015",
+      "subAccId": "s0016",
+      "note": "Quarterly savings interest",
+      "paid": false
+    },
+    {
+      "id": "t0140",
+      "date": "2026-10-01T00:00:00",
+      "amount": 92000,
+      "currency": "INR",
+      "catId": "c0001",
+      "subId": "s0002",
+      "accId": "a0013",
+      "subAccId": "s0014",
+      "note": "Monthly salary",
+      "paid": false
+    },
+    {
+      "id": "t0141",
+      "date": "2026-10-01T00:00:00",
+      "amount": 120,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Pongal vada",
+      "paid": false
+    },
+    {
+      "id": "t0142",
+      "date": "2026-10-01T00:00:00",
+      "amount": 220,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "kom3rhcyo",
+      "subAccId": "i5d8nrn9q",
+      "note": "Office lunch",
+      "paid": false
+    },
+    {
+      "id": "t0143",
+      "date": "2026-10-01T00:00:00",
+      "amount": 210,
+      "currency": "INR",
+      "catId": "5surenyl9",
+      "subId": "03nyy3lj7",
+      "accId": "wyy3njhuk",
+      "subAccId": "vywhncljw",
+      "note": "Ola to office",
+      "paid": false
+    },
+    {
+      "id": "t0144",
+      "date": "2026-10-02T00:00:00",
+      "amount": 110,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Dosa & coffee",
+      "paid": false
+    },
+    {
+      "id": "t0145",
+      "date": "2026-10-02T00:00:00",
+      "amount": 150,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "kom3rhcyo",
+      "subAccId": "i5d8nrn9q",
+      "note": "Office lunch",
+      "paid": false
+    },
+    {
+      "id": "t0146",
+      "date": "2026-10-03T00:00:00",
+      "amount": 399,
+      "currency": "INR",
+      "catId": "ewvoo7q2m",
+      "subId": "wj60ktyzw",
+      "accId": "wyy3njhuk",
+      "subAccId": "n1irrnoh7",
+      "note": "Airtel recharge",
+      "paid": false
+    },
+    {
+      "id": "t0147",
+      "date": "2026-10-03T00:00:00",
+      "amount": 1820,
+      "currency": "INR",
+      "catId": "4j1ra7trc",
+      "subId": "6y185e8dk",
+      "accId": "kom3rhcyo",
+      "subAccId": "gca4rd7dd",
+      "note": "BigBasket order",
+      "paid": false
+    },
+    {
+      "id": "t0148",
+      "date": "2026-10-04T00:00:00",
+      "amount": 640,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "r1cnunlvh",
+      "accId": "kom3rhcyo",
+      "subAccId": "i5d8nrn9q",
+      "note": "Anjappar",
+      "paid": false
+    },
+    {
+      "id": "t0149",
+      "date": "2026-10-04T00:00:00",
+      "amount": 2650,
+      "currency": "INR",
+      "catId": "5surenyl9",
+      "subId": "3ae26viti",
+      "accId": "9z9lp5eu1",
+      "subAccId": "xgm9shkoi",
+      "note": "Indian Oil fuel",
+      "paid": false
+    },
+    {
+      "id": "t0195",
+      "date": "2026-10-04T00:00:00",
+      "amount": 4999,
+      "currency": "INR",
+      "catId": "z8ajf2a8v",
+      "subId": "gaysgtspv",
+      "accId": "kom3rhcyo",
+      "subAccId": "i5d8nrn9q",
+      "note": "Festive shopping",
+      "paid": false
+    },
+    {
+      "id": "t0150",
+      "date": "2026-10-05T00:00:00",
+      "amount": 18000,
+      "currency": "INR",
+      "catId": "c0009",
+      "subId": "s0010",
+      "accId": "a0015",
+      "subAccId": "s0016",
+      "note": "Flat 2B rent received",
+      "paid": false
+    },
+    {
+      "id": "t0151",
+      "date": "2026-10-05T00:00:00",
+      "amount": 120,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Idli & filter coffee",
+      "paid": false
+    },
+    {
+      "id": "t0152",
+      "date": "2026-10-05T00:00:00",
+      "amount": 150,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "kom3rhcyo",
+      "subAccId": "i5d8nrn9q",
+      "note": "Office lunch",
+      "paid": false
+    },
+    {
+      "id": "t0153",
+      "date": "2026-10-05T00:00:00",
+      "amount": 165,
+      "currency": "INR",
+      "catId": "5surenyl9",
+      "subId": "03nyy3lj7",
+      "accId": "wyy3njhuk",
+      "subAccId": "vywhncljw",
+      "note": "Ola to office",
+      "paid": false
+    },
+    {
+      "id": "t0154",
+      "date": "2026-10-06T00:00:00",
+      "amount": 120,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Pongal vada",
+      "paid": false
+    },
+    {
+      "id": "t0155",
+      "date": "2026-10-06T00:00:00",
+      "amount": 150,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "wyy3njhuk",
+      "subAccId": "n1irrnoh7",
+      "note": "Office lunch",
+      "paid": false
+    },
+    {
+      "id": "t0156",
+      "date": "2026-10-07T00:00:00",
+      "amount": 90,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Dosa & coffee",
+      "paid": false
+    },
+    {
+      "id": "t0157",
+      "date": "2026-10-07T00:00:00",
+      "amount": 260,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "kom3rhcyo",
+      "subAccId": "i5d8nrn9q",
+      "note": "Office lunch",
+      "paid": false
+    },
+    {
+      "id": "t0158",
+      "date": "2026-10-08T00:00:00",
+      "amount": 120,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Idli & filter coffee",
+      "paid": false
+    },
+    {
+      "id": "t0159",
+      "date": "2026-10-08T00:00:00",
+      "amount": 260,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "wyy3njhuk",
+      "subAccId": "n1irrnoh7",
+      "note": "Office lunch",
+      "paid": false
+    },
+    {
+      "id": "t0160",
+      "date": "2026-10-08T00:00:00",
+      "amount": 240,
+      "currency": "INR",
+      "catId": "5surenyl9",
+      "subId": "03nyy3lj7",
+      "accId": "wyy3njhuk",
+      "subAccId": "vywhncljw",
+      "note": "Uber home",
+      "paid": false
+    },
+    {
+      "id": "t0161",
+      "date": "2026-10-09T00:00:00",
+      "amount": 349,
+      "currency": "INR",
+      "catId": "ewvoo7q2m",
+      "subId": "yqoi4h7f6",
+      "accId": "wyy3njhuk",
+      "subAccId": "vywhncljw",
+      "note": "Tata Play DTH",
+      "paid": false
+    },
+    {
+      "id": "t0162",
+      "date": "2026-10-09T00:00:00",
+      "amount": 140,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Pongal vada",
+      "paid": false
+    },
+    {
+      "id": "t0163",
+      "date": "2026-10-09T00:00:00",
+      "amount": 220,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "wyy3njhuk",
+      "subAccId": "n1irrnoh7",
+      "note": "Office lunch",
+      "paid": false
+    },
+    {
+      "id": "t0202",
+      "date": "2026-10-09T00:00:00",
+      "amount": 1299,
+      "currency": "INR",
+      "catId": "c0011",
+      "subId": "s0012",
+      "accId": "a0015",
+      "subAccId": "s0017",
+      "note": "Amazon return refund",
+      "paid": false
+    },
+    {
+      "id": "t0164",
+      "date": "2026-10-10T00:00:00",
+      "amount": 1450,
+      "currency": "INR",
+      "catId": "4j1ra7trc",
+      "subId": "6y185e8dk",
+      "accId": "kom3rhcyo",
+      "subAccId": "gca4rd7dd",
+      "note": "More supermarket",
+      "paid": false
+    },
+    {
+      "id": "t0196",
+      "date": "2026-10-10T00:00:00",
+      "amount": 890,
+      "currency": "INR",
+      "catId": "ssihzbrj0",
+      "subId": "4mp0kq0wz",
+      "accId": "wyy3njhuk",
+      "subAccId": "n1irrnoh7",
+      "note": "Cleaning supplies",
+      "paid": false
+    },
+    {
+      "id": "t0165",
+      "date": "2026-10-11T00:00:00",
+      "amount": 640,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "r1cnunlvh",
+      "accId": "kom3rhcyo",
+      "subAccId": "i5d8nrn9q",
+      "note": "Barbeque Nation",
+      "paid": false
+    },
+    {
+      "id": "t0166",
+      "date": "2026-10-12T00:00:00",
+      "amount": 649,
+      "currency": "INR",
+      "catId": "db0kqcfse",
+      "subId": "mp25qqcb9",
+      "accId": "kom3rhcyo",
+      "subAccId": "i5d8nrn9q",
+      "note": "Netflix",
+      "paid": false
+    },
+    {
+      "id": "t0167",
+      "date": "2026-10-12T00:00:00",
+      "amount": 90,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Idli & filter coffee",
+      "paid": false
+    },
+    {
+      "id": "t0168",
+      "date": "2026-10-13T00:00:00",
+      "amount": 140,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Idli & filter coffee",
+      "paid": false
+    },
+    {
+      "id": "t0169",
+      "date": "2026-10-13T00:00:00",
+      "amount": 150,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "wyy3njhuk",
+      "subAccId": "n1irrnoh7",
+      "note": "Office lunch",
+      "paid": false
+    },
+    {
+      "id": "t0170",
+      "date": "2026-10-14T00:00:00",
+      "amount": 110,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Dosa & coffee",
+      "paid": false
+    },
+    {
+      "id": "t0171",
+      "date": "2026-10-14T00:00:00",
+      "amount": 220,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "wyy3njhuk",
+      "subAccId": "n1irrnoh7",
+      "note": "Office lunch",
+      "paid": false
+    },
+    {
+      "id": "t0172",
+      "date": "2026-10-14T00:00:00",
+      "amount": 210,
+      "currency": "INR",
+      "catId": "5surenyl9",
+      "subId": "03nyy3lj7",
+      "accId": "wyy3njhuk",
+      "subAccId": "vywhncljw",
+      "note": "Ola to office",
+      "paid": false
+    },
+    {
+      "id": "t0200",
+      "date": "2026-10-14T00:00:00",
+      "amount": 650,
+      "currency": "USD",
+      "catId": "c0004",
+      "subId": "s0005",
+      "accId": "a0018",
+      "subAccId": "s0019",
+      "note": "Website redesign",
+      "paid": false
+    },
+    {
+      "id": "t0173",
+      "date": "2026-10-15T00:00:00",
+      "amount": 90,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Idli & filter coffee",
+      "paid": false
+    },
+    {
+      "id": "t0174",
+      "date": "2026-10-15T00:00:00",
+      "amount": 180,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "kom3rhcyo",
+      "subAccId": "i5d8nrn9q",
+      "note": "Office lunch",
+      "paid": false
+    },
+    {
+      "id": "t0203",
+      "date": "2026-10-15T00:00:00",
+      "amount": 25000,
+      "currency": "INR",
+      "catId": "c0001",
+      "subId": "s0003",
+      "accId": "a0013",
+      "subAccId": "s0014",
+      "note": "Diwali bonus",
+      "paid": false
+    },
+    {
+      "id": "t0175",
+      "date": "2026-10-16T00:00:00",
+      "amount": 120,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Pongal vada",
+      "paid": false
+    },
+    {
+      "id": "t0176",
+      "date": "2026-10-16T00:00:00",
+      "amount": 150,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "kom3rhcyo",
+      "subAccId": "i5d8nrn9q",
+      "note": "Office lunch",
+      "paid": false
+    },
+    {
+      "id": "t0177",
+      "date": "2026-10-17T00:00:00",
+      "amount": 2680,
+      "currency": "INR",
+      "catId": "4j1ra7trc",
+      "subId": "6y185e8dk",
+      "accId": "kom3rhcyo",
+      "subAccId": "gca4rd7dd",
+      "note": "More supermarket",
+      "paid": false
+    },
+    {
+      "id": "t0197",
+      "date": "2026-10-17T00:00:00",
+      "amount": 1500,
+      "currency": "INR",
+      "catId": "wfaa523dd",
+      "subId": "nphjf1taa",
+      "accId": "wyy3njhuk",
+      "subAccId": "n1irrnoh7",
+      "note": "Wedding gift",
+      "paid": false
+    },
+    {
+      "id": "t0178",
+      "date": "2026-10-19T00:00:00",
+      "amount": 110,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Dosa & coffee",
+      "paid": false
+    },
+    {
+      "id": "t0179",
+      "date": "2026-10-19T00:00:00",
+      "amount": 150,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "kom3rhcyo",
+      "subAccId": "i5d8nrn9q",
+      "note": "Office lunch",
+      "paid": false
+    },
+    {
+      "id": "t0180",
+      "date": "2026-10-20T00:00:00",
+      "amount": 90,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Pongal vada",
+      "paid": false
+    },
+    {
+      "id": "t0198",
+      "date": "2026-10-20T00:00:00",
+      "amount": 620,
+      "currency": "INR",
+      "catId": "lu15xwpsz",
+      "subId": "5y43ovetr",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Spa voucher",
+      "paid": false
+    },
+    {
+      "id": "t0181",
+      "date": "2026-10-21T00:00:00",
+      "amount": 120,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Idli & filter coffee",
+      "paid": false
+    },
+    {
+      "id": "t0182",
+      "date": "2026-10-21T00:00:00",
+      "amount": 240,
+      "currency": "INR",
+      "catId": "5surenyl9",
+      "subId": "03nyy3lj7",
+      "accId": "wyy3njhuk",
+      "subAccId": "vywhncljw",
+      "note": "Uber home",
+      "paid": false
+    },
+    {
+      "id": "t0183",
+      "date": "2026-10-22T00:00:00",
+      "amount": 110,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Pongal vada",
+      "paid": false
+    },
+    {
+      "id": "t0184",
+      "date": "2026-10-22T00:00:00",
+      "amount": 220,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "ertr41gcm",
+      "accId": "kom3rhcyo",
+      "subAccId": "i5d8nrn9q",
+      "note": "Office lunch",
+      "paid": false
+    },
+    {
+      "id": "t0185",
+      "date": "2026-10-22T00:00:00",
+      "amount": 240,
+      "currency": "INR",
+      "catId": "5surenyl9",
+      "subId": "03nyy3lj7",
+      "accId": "wyy3njhuk",
+      "subAccId": "vywhncljw",
+      "note": "Uber home",
+      "paid": false
+    },
+    {
+      "id": "t0186",
+      "date": "2026-10-23T00:00:00",
+      "amount": 140,
+      "currency": "INR",
+      "catId": "nyaa0nzpi",
+      "subId": "x2agt6j3q",
+      "accId": "sj56xk7a8",
+      "subAccId": "sepht7rwg",
+      "note": "Pongal vada",
+      "paid": false
+    },
+    {
+      "id": "t0187",
+      "date": "2026-10-24T00:00:00",
+      "amount": 2240,
+      "currency": "INR",
+      "catId": "4j1ra7trc",
+      "subId": "6y185e8dk",
+      "accId": "kom3rhcyo",
+      "subAccId": "gca4rd7dd",
+      "note": "Reliance Smart",
+      "paid": false
+    }
+  ]
+}
