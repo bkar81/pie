@@ -197,7 +197,7 @@ Download the template, fill it in Excel or Google Sheets, save as CSV and import
 
 **JSON backups** — Settings only, Data only and Complete backup. Restoring data can replace or add to what's on the phone. Backups never include screen-privacy details. Files from older versions are upgraded automatically; any setting missing from a file falls back to its default.
 
-**Sample data** — see [SAMPLE-DATA.md](./SAMPLE-DATA.md) to load a demo dataset.
+**Sample data** — see [SAMPLE-DATA.md](./sample%20data/SAMPLE-DATA.md) to load a demo dataset.
 
 ## Google Drive sync and family use
 
