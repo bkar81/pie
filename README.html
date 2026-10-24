@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#111111">
+<title>PIE Tracker — README</title>
+<style>
+:root{--bg:#111;--surface:#191919;--surface2:#202020;--text:#f3f3f3;--dim:#c7c7c7;--faint:#999;--accent:#d9a441;--border:#333;--accent-soft:rgba(217,164,65,.12)}
+*{box-sizing:border-box} html,body{margin:0;padding:0;background:var(--bg);color:var(--text)}
+body{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.65;padding:18px}
+.page{width:min(900px,100%);margin:auto;background:var(--surface);border:1px solid var(--border);border-radius:16px;overflow:hidden}
+.header{padding:22px 20px;background:var(--surface2);border-bottom:1px solid var(--border);display:flex;gap:14px;align-items:center}
+.header img{width:56px;height:56px;border-radius:12px;flex:0 0 auto}
+.header h1{margin:0 0 2px;font-size:24px}.header p{margin:0;color:var(--faint);font-size:14px}
+.back{display:inline-block;margin:0 0 14px;font-size:13.5px;color:var(--faint)}
+.content{padding:20px}h1,h2,h3,h4,h5,h6{line-height:1.3;margin:1.4em 0 .65em}
+h1{font-size:25px}h2{font-size:21px;border-bottom:1px solid var(--border);padding-bottom:7px}h3{font-size:18px}
+p{margin:0 0 14px;color:var(--dim)}a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+ul,ol{color:var(--dim);padding-left:25px}li{margin:5px 0}
+code{background:var(--surface2);border:1px solid var(--border);border-radius:6px;padding:2px 5px;font-size:.92em}
+pre{background:#0b0b0b;border:1px solid var(--border);border-radius:10px;padding:13px;overflow:auto;color:#ddd;font-size:13px;line-height:1.55}
+pre code{background:none;border:0;padding:0}
+blockquote{margin:14px 0;padding:10px 14px;border-left:3px solid var(--accent);background:var(--accent-soft);color:var(--dim)}
+hr{border:0;border-top:1px solid var(--border);margin:22px 0}
+.tbl{overflow-x:auto;margin:0 0 16px;border:1px solid var(--border);border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{padding:8px 11px;border-bottom:1px solid var(--border);text-align:left;vertical-align:top;color:var(--dim)}
+th{background:var(--surface2);color:var(--text);font-weight:700}
+tr:last-child td{border-bottom:0}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px;margin:6px 0 18px}
+.gallery figure{margin:0;text-align:center}
+.gallery img{width:100%;height:auto;border-radius:12px;border:1px solid var(--border);display:block}
+.gallery figcaption{font-size:12px;color:var(--faint);margin-top:6px}
+@media(max-width:480px){body{padding:10px}.content{padding:16px}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style>
+</head>
+<body><div class="page">
+<div class="header"><img src="./icon-192.png" alt=""><div><h1>PIE Tracker</h1><p>Personal Income Expense Tracker · README</p></div></div>
+<main class="content">
+<a class="back" href="./index.html">‹ Back to PIE Tracker</a>
+
+<p><strong>Track. Analyze. Manage. Grow.</strong></p>
+<p>A private, flexible tracker for what comes in, what goes out and what is left — in any currency. PIE Tracker runs in your browser, installs like an app, works offline, and keeps your data on your own device.</p>
+<p><strong>Open the app:</strong> <a href="https://bkar81.github.io/pie/">bkar81.github.io/pie</a></p>
+<h2>Screenshots</h2>
+<div class="gallery"><figure><a href="screenshots/01-home-month.png"><img src="screenshots/01-home-month.png" alt="Home" loading="lazy"></a><figcaption>Home</figcaption></figure><figure><a href="screenshots/02-add-transaction.png"><img src="screenshots/02-add-transaction.png" alt="Add transaction" loading="lazy"></a><figcaption>Add transaction</figcaption></figure><figure><a href="screenshots/03-currency-picker.png"><img src="screenshots/03-currency-picker.png" alt="Currency picker" loading="lazy"></a><figcaption>Currency picker</figcaption></figure><figure><a href="screenshots/04-analysis-overview.png"><img src="screenshots/04-analysis-overview.png" alt="Analysis · Overview" loading="lazy"></a><figcaption>Analysis · Overview</figcaption></figure><figure><a href="screenshots/05-analysis-cashflow.png"><img src="screenshots/05-analysis-cashflow.png" alt="Analysis · Cash flow" loading="lazy"></a><figcaption>Analysis · Cash flow</figcaption></figure><figure><a href="screenshots/06-analysis-categories.png"><img src="screenshots/06-analysis-categories.png" alt="Analysis · Categories" loading="lazy"></a><figcaption>Analysis · Categories</figcaption></figure><figure><a href="screenshots/07-analysis-insights.png"><img src="screenshots/07-analysis-insights.png" alt="Analysis · Insights" loading="lazy"></a><figcaption>Analysis · Insights</figcaption></figure><figure><a href="screenshots/08-analysis-statement.png"><img src="screenshots/08-analysis-statement.png" alt="Analysis · Statement" loading="lazy"></a><figcaption>Analysis · Statement</figcaption></figure><figure><a href="screenshots/09-analysis-drilldown.png"><img src="screenshots/09-analysis-drilldown.png" alt="Analysis · Drill-down" loading="lazy"></a><figcaption>Analysis · Drill-down</figcaption></figure><figure><a href="screenshots/10-analysis-filters.png"><img src="screenshots/10-analysis-filters.png" alt="Analysis · Filters" loading="lazy"></a><figcaption>Analysis · Filters</figcaption></figure><figure><a href="screenshots/11-calendar.png"><img src="screenshots/11-calendar.png" alt="Calendar" loading="lazy"></a><figcaption>Calendar</figcaption></figure><figure><a href="screenshots/12-calendar-day.png"><img src="screenshots/12-calendar-day.png" alt="Calendar · Day details" loading="lazy"></a><figcaption>Calendar · Day details</figcaption></figure><figure><a href="screenshots/13-settings-wallet.png"><img src="screenshots/13-settings-wallet.png" alt="Settings · Wallet" loading="lazy"></a><figcaption>Settings · Wallet</figcaption></figure><figure><a href="screenshots/14-settings-category.png"><img src="screenshots/14-settings-category.png" alt="Settings · Category" loading="lazy"></a><figcaption>Settings · Category</figcaption></figure><figure><a href="screenshots/15-add-category.png"><img src="screenshots/15-add-category.png" alt="Add category" loading="lazy"></a><figcaption>Add category</figcaption></figure><figure><a href="screenshots/16-add-account-type.png"><img src="screenshots/16-add-account-type.png" alt="Add account type" loading="lazy"></a><figcaption>Add account type</figcaption></figure><figure><a href="screenshots/17-settings-data.png"><img src="screenshots/17-settings-data.png" alt="Settings · Data" loading="lazy"></a><figcaption>Settings · Data</figcaption></figure><figure><a href="screenshots/18-settings-general.png"><img src="screenshots/18-settings-general.png" alt="Settings · General" loading="lazy"></a><figcaption>Settings · General</figcaption></figure><figure><a href="screenshots/19-screen-privacy-setup.png"><img src="screenshots/19-screen-privacy-setup.png" alt="Screen privacy · Setup" loading="lazy"></a><figcaption>Screen privacy · Setup</figcaption></figure><figure><a href="screenshots/20-recovery-code.png"><img src="screenshots/20-recovery-code.png" alt="Screen privacy · Recovery code" loading="lazy"></a><figcaption>Screen privacy · Recovery code</figcaption></figure><figure><a href="screenshots/21-screen-privacy-on.png"><img src="screenshots/21-screen-privacy-on.png" alt="Screen privacy · Settings" loading="lazy"></a><figcaption>Screen privacy · Settings</figcaption></figure><figure><a href="screenshots/22-access-modes.png"><img src="screenshots/22-access-modes.png" alt="Access modes" loading="lazy"></a><figcaption>Access modes</figcaption></figure><figure><a href="screenshots/23-entry-only-home.png"><img src="screenshots/23-entry-only-home.png" alt="Entry only · Home" loading="lazy"></a><figcaption>Entry only · Home</figcaption></figure><figure><a href="screenshots/24-view-only-home.png"><img src="screenshots/24-view-only-home.png" alt="View only · Home" loading="lazy"></a><figcaption>View only · Home</figcaption></figure><figure><a href="screenshots/25-unlock.png"><img src="screenshots/25-unlock.png" alt="Unlock" loading="lazy"></a><figcaption>Unlock</figcaption></figure><figure><a href="screenshots/26-about.png"><img src="screenshots/26-about.png" alt="About" loading="lazy"></a><figcaption>About</figcaption></figure></div>
+<h2>What PIE Tracker does</h2>
+<p>PIE Tracker keeps your transactions organized around the things that matter: <strong>where money came from, where it went, which account it moved through, and whether a card payment still needs settling.</strong></p>
+<h2>Core features</h2>
+<ul>
+<li>🏠 <strong>Home</strong> — View, search and edit transactions by day, week, month, year or a custom range (up to 60 days). Income, expenses and net are shown at the top.</li>
+<li>➕ <strong>Fast entry</strong> — Expense or income, date, amount and currency, category, account and note. Your usual type and currency are already selected; change them only when needed. A built-in calculator fills the amount.</li>
+<li>💼 <strong>Wallet</strong> — Account types grouped as <strong>Income</strong> or <strong>Expense</strong>, each with its own accounts. The group decides whether an amount adds or subtracts.</li>
+<li>🗂️ <strong>Categories</strong> — Each category is Income, Expense or Both, so the entry screen only offers categories that fit.</li>
+<li>💱 <strong>Currencies</strong> — Enter any currency. PIE Tracker never converts, and never adds different currencies together.</li>
+<li>📊 <strong>Analysis</strong> — Overview, cash flow, period breakdown, categories, accounts, card settlements, insights and a statement grid. Filters, comparisons and drill-down throughout.</li>
+<li>📅 <strong>Calendar</strong> — Daily income and expenses, pending card payments, and a ★ on days with another currency.</li>
+<li>💳 <strong>Card tracking</strong> — Separate card spending from card payments and see paid versus pending amounts.</li>
+<li>📥 <strong>CSV import</strong> — Build rows in Excel, save as CSV and import, with a preview before anything is saved.</li>
+<li>💾 <strong>Data control</strong> — Stored on your device. JSON backups and CSV export any time.</li>
+<li>☁️ <strong>Google Drive sync</strong> — Optional and off by default. Family devices signed in to the same Google account share one data file.</li>
+<li>👤 <strong>Entered by</strong> — Every entry records the name of the phone it was made on, so you can see and filter who entered what.</li>
+<li>🔒 <strong>Screen privacy</strong> — Optionally restrict a phone to <strong>Entry only</strong> or <strong>View only</strong> until a code is entered. Off by default.</li>
+<li>↩️ <strong>Back button</strong> — Android's back button closes popups and steps back through screens instead of closing the app.</li>
+</ul>
+<h2>How income and expenses add up</h2>
+<p>Every <strong>account type</strong> belongs to a group: <strong>Expense</strong> or <strong>Income</strong>. The group is the only thing that decides the direction of an amount.</p>
+<ul>
+<li>Amounts are always entered as <strong>positive</strong> numbers.</li>
+<li>Income is shown in <strong>green</strong>, expenses in <strong>red</strong>.</li>
+<li><strong>Net = Income − Expenses.</strong></li>
+</ul>
+<pre><code>Salary  → Employer / Acme Corp    → ₹92,000   income
+Lunch   → Credit Card / HDFC      → ₹420      expense (pending)
+Net                                → ₹91,580
+</code></pre>
+<p>A bank account that both receives and pays money is added twice — once under Income and once under Expense. To tell similar accounts apart, add a note in brackets, for example <code>ICICI (Purp 1)</code> and <code>ICICI (Purp 2)</code>.</p>
+<p><strong>Categories</strong> have three groups:</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Category group</th>
+<th>Offered when entering</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Income</td>
+<td>Income only (e.g. Salary, Sales)</td>
+</tr>
+<tr>
+<td>Expense</td>
+<td>Expenses only (e.g. Food, Rent)</td>
+</tr>
+<tr>
+<td>Both</td>
+<td>Income and expenses (e.g. Refund, Gift)</td>
+</tr>
+</tbody>
+</table></div>
+<p>When income is entered for a period, Home, Calendar and Analysis show <strong>Income / Expenses / Net</strong>. If there is no income in the period, everything related to income is hidden and the app looks like a plain expense tracker.</p>
+<h2>Currencies</h2>
+<ul>
+<li>Set a <strong>default currency</strong> in <strong>Settings → General</strong>. It is preselected for every new entry on that phone.</li>
+<li>Change the currency of a single entry by tapping the currency chip beside the amount. Add a new currency right from that list.</li>
+<li>Codes and symbols can be up to 3 characters (<code>₹</code>, <code>$</code>, <code>S$</code>, <code>AED</code>). Leave the symbol blank to show the code instead. Ten common symbols are offered as quick picks.</li>
+<li>Totals are kept <strong>per currency</strong>. ₹10,000 and $100 are always shown separately and never added together. Analysis charts show one currency at a time; the others are listed underneath.</li>
+</ul>
+<h2>Analysis</h2>
+<p>Analysis is one screen with shared controls and collapsible cards. Cards start expanded and remember if you collapse them.</p>
+<p><strong>Controls</strong>
+- <strong>Expense / Income / Both</strong> — remembered on the phone. Hidden when the period has no income.
+- <strong>Period</strong> — Day, Week, Month, Year or Custom, using the arrows and date at the top.
+- <strong>Search</strong> — notes, categories and accounts.
+- <strong>Currency</strong> — which currency the charts show.
+- <strong>Filters</strong> — accounts and sub-accounts, categories and subcategories, who entered it, and payment status (Pending, Paid, Direct). Every list is multi-select with an <strong>All</strong> option: untick one item and All unticks; tick All and everything is selected.
+- <strong>Comparison</strong> — vs the previous period, vs the same period last year, or off.</p>
+<p><strong>Cards</strong>
+1. <strong>Overview</strong> — Income, Expenses, Net with the share of income kept, and card payments outstanding. Other currencies are listed separately.
+2. <strong>Cash flow / Trend</strong> — daily, weekly, monthly or yearly bars with a net line. Tap a bar to open that period.
+3. <strong>Breakdown</strong> — days in a week, weeks in a month or months in a year, with income, expenses and net per row.
+4. <strong>Where it goes / Where it comes from</strong> — expense and income categories with share and change vs the comparison period.
+5. <strong>Accounts</strong> — paid from / received in, with paid and pending amounts for card accounts.
+6. <strong>Card settlements</strong> — what is pending per card, with a shortcut to mark items paid on Home.
+7. <strong>Insights</strong> — income left after expenses, largest expenses and income, biggest category changes, recurring spending (same note in 3 of the last 4 months) and top notes.
+8. <strong>Statement</strong> — a bank-statement style grid: Date, Description, Account, Category, Entered by, Income, Expense and a running Total for the selected period, with a totals row. It scrolls sideways inside its card and shows 10 rows per page. Export it as <strong>CSV</strong> (opens in Excel) or <strong>share it as an image</strong> (copy, save or share).</p>
+<p><strong>Drill-down</strong> — tap a category or account to see its subcategories or sub-accounts, then the individual transactions. A breadcrumb and the back button take you back up.</p>
+<h2>Calendar</h2>
+<ul>
+<li>Each day shows income (green) and expenses (red) in the default currency.</li>
+<li>A red dot marks pending card payments.</li>
+<li>A blue ★ in the corner marks a day with an entry in another currency.</li>
+<li>Tap a day to see its income and expenses; tap an entry to open it.</li>
+</ul>
+<h2>How card payment tracking works</h2>
+<p>A credit-card purchase is an <strong>expense</strong>. Paying the card later is a <strong>settlement</strong>, not another expense, so nothing is counted twice.</p>
+<pre><code>Expense      → HDFC Regalia → ₹2,500 → Pending
+Card payment → mark it Paid (Home → Pending → select → Mark Paid)
+Result       → HDFC Regalia outstanding reduced by ₹2,500
+</code></pre>
+<ul>
+<li><strong>Payment / settlement account</strong> — for credit cards: purchases stay pending until marked paid.</li>
+<li><strong>Direct account</strong> — UPI, bank accounts, debit cards, wallets or cash: treated as paid at once.</li>
+<li>Set this per account type in <strong>Settings → Wallet</strong>.</li>
+</ul>
+<h2>Settings</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Tab</th>
+<th>What's in it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Wallet</strong></td>
+<td>Income accounts, Expense accounts and Currencies, each a collapsible section. Creating or editing an account type starts with the Expense/Income toggle; the name box shows example names for the chosen group.</td>
+</tr>
+<tr>
+<td><strong>Category</strong></td>
+<td>Income, Expense and Both sections. Creating a category starts with the Income / Expense / Both choice.</td>
+</tr>
+<tr>
+<td><strong>Data</strong></td>
+<td>Google Sync, Settings only, Data only, Complete backup, and CSV import / export — each collapsible.</td>
+</tr>
+<tr>
+<td><strong>General</strong></td>
+<td>This phone's "Entered by" name, default type and currency, text size, pinch-zoom, and screen privacy.</td>
+</tr>
+</tbody>
+</table></div>
+<h3>What is shared and what stays on each phone</h3>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Shared through Google Drive sync</th>
+<th>Kept on each phone only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Transactions (each with its "Entered by" name)</td>
+<td>"Entered by" name</td>
+</tr>
+<tr>
+<td>Accounts, categories and currencies</td>
+<td>Default type (Expense/Income) and default currency</td>
+</tr>
+<tr>
+<td>The screen-privacy code (as a verifier, never the code itself)</td>
+<td>Text size and pinch-zoom</td>
+</tr>
+<tr>
+<td></td>
+<td>Access mode (Admin / Entry only / View only) and auto-lock</td>
+</tr>
+<tr>
+<td></td>
+<td>Analysis view, collapsed cards, comparison and trend period</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Import and export</h2>
+<p><strong>CSV import</strong> (Settings → Data → CSV import / export)</p>
+<p>Download the template, fill it in Excel or Google Sheets, save as CSV and import it. A preview shows what will be added, created and skipped before anything is saved.</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Required</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Date</td>
+<td>Yes</td>
+<td><code>DD-MM-YYYY</code>, <code>MM-DD-YYYY</code> (choose in the preview), <code>YYYY-MM-DD</code>, or month names like <code>23-Oct-2026</code></td>
+</tr>
+<tr>
+<td>Type</td>
+<td>No</td>
+<td><code>Income</code> or <code>Expense</code>; blank uses the phone's default type</td>
+</tr>
+<tr>
+<td>Category, Subcategory</td>
+<td>Category yes</td>
+<td>Matched by name; missing ones are created</td>
+</tr>
+<tr>
+<td>Account Type, Account</td>
+<td>Account Type yes</td>
+<td>Matched by name within the Type's group; missing ones are created</td>
+</tr>
+<tr>
+<td>Amount</td>
+<td>Yes</td>
+<td>Positive number; <code>1,02,500</code> and <code>92000.00</code> both work</td>
+</tr>
+<tr>
+<td>Currency</td>
+<td>No</td>
+<td>3-letter code; blank uses the phone's default currency</td>
+</tr>
+<tr>
+<td>Paid</td>
+<td>No</td>
+<td><code>Yes</code>/<code>No</code> (or <code>Paid</code>/<code>Pending</code>) for card accounts</td>
+</tr>
+<tr>
+<td>Note</td>
+<td>No</td>
+<td>Commas and quotes are handled</td>
+</tr>
+<tr>
+<td>Entered By</td>
+<td>No</td>
+<td>Name of who entered it; blank uses this phone's name</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>Add to existing</strong> or <strong>Replace all</strong> transactions.</li>
+<li>Possible duplicates (same date, amount, currency, account and note) are flagged and skipped by default.</li>
+<li>Rows with errors are listed with the reason and skipped.</li>
+</ul>
+<p><strong>JSON backups</strong> — Settings only, Data only and Complete backup. Restoring data can replace or add to what's on the phone. Backups never include screen-privacy details. Files from older versions are upgraded automatically; any setting missing from a file falls back to its default.</p>
+<p><strong>Sample data</strong> — see <a href="./SAMPLE-DATA.md">SAMPLE-DATA.md</a> to load a demo dataset.</p>
+<h2>Google Drive sync and family use</h2>
+<p>Sync is <strong>optional and off by default</strong>. When connected (Settings → Data → Google Sync), your settings and transactions are kept in a single file, <code>pie-sync.json</code>, in your Google Drive.</p>
+<ul>
+<li><strong>Family or team use:</strong> sign every device in to the <strong>same Google account</strong> for PIE Tracker sync. Everyone enters their own transactions and they all end up in the one shared file.</li>
+<li><strong>Sync any time</strong> with the orange cloud at the top. A dot on the cloud means changes haven't been synced yet.</li>
+<li><strong>Merging is per record.</strong> Every entry gets its own unique ID when it is created, so two people entering exactly the same amount, account, category and note create <strong>two</strong> entries — they are never merged into one. If the <em>same</em> entry was edited on two phones, the phone that syncs second keeps its version.</li>
+<li><strong>Who entered what:</strong> set each phone's name in <strong>Settings → General → This phone → Entered by</strong> (for example the person's name). It is stamped on every entry made there, shown under each entry, and available as a filter and a Statement column in Analysis.</li>
+<li>Sync only happens when someone taps the cloud; PIE Tracker works fully offline in between.</li>
+<li>On a phone with screen privacy locked, sync never asks questions: it merges or restores on its own.</li>
+<li>PIE Tracker only asks Google for the <code>drive.file</code> permission, which lets it see <strong>only the files it created</strong> — nothing else in your Drive.</li>
+</ul>
+<h2>Screen privacy</h2>
+<p>Screen privacy lets the owner hand a phone to someone — a family member, an employee, an agent — and decide what that person can do with it. It is <strong>off by default</strong>: if you never set it up, the phone has full access and nothing changes.</p>
+<h3>The three access modes</h3>
+<p>Each phone has one mode. It only applies while the phone is locked; entering the code always gives full access until the phone locks again.</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Screens</th>
+<th>What the person can do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Admin</strong> (full access)</td>
+<td>All</td>
+<td>Everything: all data, settings, accounts, categories and currencies. This is the owner's phone.</td>
+</tr>
+<tr>
+<td><strong>Entry only</strong></td>
+<td>Home, About</td>
+<td>Add income and expenses. Home shows <strong>only entries not yet synced</strong> — with all the usual Day/Week/Month/Year/Custom views, totals and search, so a person copying from a book can still tally their work. Once synced, those entries disappear from their view. They can edit or delete entries that haven't been synced yet. They can't create or change accounts, categories or currencies.</td>
+</tr>
+<tr>
+<td><strong>View only</strong></td>
+<td>Home, Analysis, Calendar, About</td>
+<td>See all data and reports. Can't add, edit or delete anything, and can't open Settings (not even text size or pinch-zoom).</td>
+</tr>
+</tbody>
+</table></div>
+<p>Hidden screens don't appear anywhere: no tab, no lock icon, no greyed-out button. The tab bar simply has fewer buttons, and the About page only describes what that phone can use.</p>
+<p><strong>Example:</strong> three helpers enter expenses from receipts. Each helper's phone is set to <em>Entry only</em> with their name as "Entered by". They add entries during the day and tap the cloud to sync. After syncing, their screen is empty again. The owner sees everything on their own <em>Admin</em> phone and can filter Analysis by "Entered by" to see who entered what.</p>
+<h3>How "not yet synced" works</h3>
+<p>PIE Tracker remembers exactly what each entry looked like at the last sync. An entry is shown on an <em>Entry only</em> phone if it was added after the last sync, or changed since. Everything already synced — including entries that arrived from other phones — stays on the phone but is hidden while it is locked. The cloud's dot shows that unsynced entries exist.</p>
+<p>Because the data stays on the phone, switching modes never needs a sync. When the owner unlocks an Entry-only phone, every screen and every entry that phone has (up to its last sync) is visible straight away. Lock it again and the person is back to seeing only their unsynced entries.</p>
+<h3>What it is — and what it isn't</h3>
+<ul>
+<li>It <strong>restricts what a person sees and does</strong> in the app. This keeps curious eyes away.</li>
+<li>It is <strong>not encryption</strong>. The financial data is stored as normal so the app, backups and sync keep working. Someone with technical skills and access to the phone — or to the shared Google account's Drive — could still read it. Use it for everyday control, not as protection against a determined attacker.</li>
+</ul>
+<h3>Setting it up</h3>
+<p>On <strong>your own phone</strong> first: Settings → General → Screen privacy → <strong>Set up</strong>.</p>
+<ol>
+<li>Choose a <strong>code</strong> of 4–20 characters (letters, numbers and symbols; no spaces).</li>
+<li>Enter a <strong>recovery email</strong> — a Google account you can sign in with. Use your own account, not the shared sync account.</li>
+<li>Choose this phone's mode — <strong>Admin</strong> for your own phone.</li>
+<li>Save the <strong>recovery code</strong> that appears. It is shown only once.</li>
+<li>Sync, so the code reaches the other devices.</li>
+</ol>
+<p>Then on <strong>each helper's phone</strong>: connect Google Sync with the shared account, sync once to receive the code, set <strong>This phone → Entered by</strong> to the person's name, and set <strong>Screen privacy → Access on this phone</strong> to <em>Entry only</em> or <em>View only</em>. Tap <strong>Lock now</strong>.</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Shared by all devices (synced)</th>
+<th>Chosen on each phone (never synced)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The code (stored as a verifier)</td>
+<td>Access mode: Admin, Entry only or View only</td>
+</tr>
+<tr>
+<td>The recovery code (stored as a verifier)</td>
+<td>"Entered by" name</td>
+</tr>
+<tr>
+<td>The recovery email (stored as a fingerprint)</td>
+<td>How soon the phone locks again</td>
+</tr>
+</tbody>
+</table></div>
+<p>One code works on every phone. Changing it on one phone changes it on all of them after their next sync.</p>
+<h3>Unlocking</h3>
+<p>Tap the <strong>PIE icon</strong> at the top left <strong>three times</strong> within a few seconds. The border of the search box (or the main card on screens without one) changes colour with each tap — grey, blue, green — and on the third tap the <strong>Enter code</strong> sheet appears. Nothing on screen says this exists.</p>
+<p>After the right code the phone has full access until it locks again:</p>
+<ul>
+<li>when PIE Tracker has been in the background longer than the chosen time (immediately, or 1, 2, 5 or 15 minutes; default 2),</li>
+<li>when the app is closed, or</li>
+<li>when you tap <strong>Lock now</strong> in Settings → General → Screen privacy.</li>
+</ul>
+<p>On a <em>View only</em> phone, trying to change an entry asks for the code.</p>
+<h3>Wrong codes</h3>
+<p>The sheet shakes on a wrong code. After 5 wrong tries, the phone waits 30 seconds before accepting another try. Each further wrong try doubles the wait, up to 15 minutes. The count survives closing and reopening the app.</p>
+<h3>If you forget the code</h3>
+<p>Tap the icon three times, then <strong>Forgot code?</strong>, and use either:</p>
+<ol>
+<li><strong>Recovery code</strong> — the <code>PIE-XXXX-XXXX-XXXX</code> code shown at setup. Works offline.</li>
+<li><strong>Verify with Google</strong> — sign in with the Google account you gave as the recovery email. PIE Tracker only reads the email address from that sign-in, compares it with the stored fingerprint, and then discards it. Drive sync is not affected, even if that phone syncs with a different Google account.</li>
+</ol>
+<p>Then set a new code, and sync to send it to your other devices. If you lose the recovery code, make a new one from Settings → General → Screen privacy while unlocked; the old one stops working.</p>
+<h3>What is actually stored</h3>
+<p>PIE Tracker never stores the code itself.</p>
+<ul>
+<li>When a code is set, the app generates a random <strong>salt</strong> and runs the code through <strong>PBKDF2-SHA256</strong> (250,000 rounds). Only the result — the <strong>verifier</strong> — and the salt are saved.</li>
+<li>When someone types a code, the same calculation runs and the result is compared with the verifier. A match unlocks; anything else doesn't.</li>
+<li>The <strong>recovery code</strong> is stored the same way.</li>
+<li>The <strong>recovery email</strong> is stored only as a SHA-256 fingerprint: enough to check "is this the same email?", not enough to read the address.</li>
+</ul>
+<p>Example: if the code is <code>Pie@2026</code>, the synced file contains something like <code>salt: q3V…</code> and <code>verifier: 9fK…</code> — never <code>Pie@2026</code>.</p>
+<h3>For your own deployment</h3>
+<p><strong>Verify with Google</strong> uses the same OAuth client as Drive sync, with the <code>openid email</code> scopes. If your Google Cloud project is in <strong>Testing</strong> mode, add each recovery email as a <strong>test user</strong>, otherwise Google will refuse that sign-in.</p>
+<h2>Display</h2>
+<ul>
+<li><strong>Text size</strong> — Normal, Large or Larger, per phone. Layout widths stay the same; long text wraps or shortens.</li>
+<li><strong>Allow pinch-zoom</strong> — off by default; turn on to zoom with two fingers. Per phone.</li>
+</ul>
+<h2>Installing PIE Tracker</h2>
+<p>When hosted (for example on GitHub Pages), PIE Tracker installs like a real app — "Add to Home Screen" on Android gives it its own icon and a full-screen launch, and it keeps working offline afterwards, even if the site later becomes unreachable. The About screen has <strong>Check for updates</strong>; a notice appears when a new version is ready.</p>
+<h2>Data &amp; privacy</h2>
+<p>Your data is kept in the browser's local storage on the device where you use it. PIE Tracker needs no server or account for the core app.</p>
+<p>Google Drive sync is <strong>optional and off by default</strong>. Nothing is sent anywhere unless you connect it in <strong>Settings → Data → Google Sync</strong>, and turning it off returns PIE Tracker to being fully offline.</p>
+<p><strong>Important:</strong> browser storage is not a substitute for backups. Export a <strong>Complete backup</strong> regularly, especially before clearing browser data or changing devices.</p>
+<p>See the <a href="./privacy.html">Privacy Policy</a> and <a href="./terms.html">Terms of Service</a>.</p>
+<h2>Sharing / forking PIE Tracker</h2>
+<p>This project is free to fork and reuse under the MIT license. Each copy keeps its own data in its own browser storage — there is no shared central database.</p>
+<p><strong>Official deployment:</strong> Google Drive sync is already configured. Users only need to go to <strong>Settings → Data → Google Sync → Connect</strong>, choose their Google account and authorize PIE Tracker. No Client ID is needed.</p>
+<p><strong>Forking or deploying your own copy:</strong> the Google OAuth Client ID in the source code is for the official deployment. <strong>Replace it with your own Client ID before deploying</strong>, and configure your OAuth client for your own site.</p>
+<h3>Enabling Google Drive sync for your own copy</h3>
+<ol>
+<li>Go to the <a href="https://console.cloud.google.com/">Google Cloud Console</a> and create a project (any name).</li>
+<li><strong>APIs &amp; Services → Library</strong> → enable the <strong>Google Drive API</strong>.</li>
+<li>Configure the <strong>OAuth consent screen</strong> (Google Auth Platform) with your app details and test users.</li>
+<li>Create an <strong>OAuth client ID</strong> for a <strong>Web application</strong>. Under <strong>Authorized JavaScript origins</strong>, add your site's origin, for example <code>https://yourname.github.io</code>.</li>
+<li>Copy the Client ID and replace the <code>PET_GOOGLE_CLIENT_ID</code> value in <code>index.html</code>.</li>
+<li>Deploy and test <strong>Settings → Data → Google Sync → Connect</strong>.</li>
+</ol>
+<p>PIE Tracker requests <code>drive.file</code> (only files it creates), which Google classifies as <strong>non-sensitive</strong>, plus <code>openid email</code> for screen-privacy recovery. Opening the app to the public needs only Google's lightweight brand verification (app name, logo, support email, privacy policy page). See <strong>OAuth consent screen → Publish App</strong>.</p>
+<h3>Running your own copy</h3>
+<ol>
+<li>Fork or download this repository.</li>
+<li>In your repo settings, enable <strong>GitHub Pages</strong> for the <code>main</code> branch (root folder). GitHub gives you a URL like <code>https://yourname.github.io/reponame/</code>.</li>
+<li>Open that URL — PIE Tracker is live and installable.</li>
+</ol>
+<h2>Version</h2>
+<p>PIE Tracker • Personal Income Expense Tracker • v1.0.0 • Local-first, with optional Google Drive sync</p>
+<h2>License</h2>
+<p>MIT — see <a href="./LICENSE">LICENSE</a>. You're free to use, modify and share your own version.</p>
+</main></div></body>
+</html>
